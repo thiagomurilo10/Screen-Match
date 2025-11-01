@@ -6,13 +6,15 @@ Projeto em **Java 21 + Spring Boot** que consome a API **OMDb** para exibir info
 - Java 21
 - Spring Boot
 - Jackson (para parsing de JSON)
-- Maven (ou Gradle)
-- Git/GitHub
+- Maven
+- Git / GitHub
 
 ## 🛠 Funcionalidades
-- Consumir dados de séries da API OMDb.
-- Mapear JSON para objetos Java usando `record` e Jackson.
-- Exibir informações como título, número de temporadas e avaliação no IMDB.
+- Buscar informações de séries pela API OMDb.
+- Exibir título, número de temporadas e avaliação no OMDB.
+- Buscar todas as temporadas e episódios de uma série.
+- Filtrar episódios sem avaliação ("N/A") para exibir apenas dados relevantes.
+
 
 ## 💡 Estrutura do Projeto
 - `ScreenmatchApplication` → classe principal que inicia a aplicação.
