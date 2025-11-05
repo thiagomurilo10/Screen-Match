@@ -2,27 +2,32 @@
 
 Projeto em **Java 21 + Spring Boot** que consome a API **OMDb** para exibir informações de séries de TV de forma prática e estruturada.
 
-## 🚀 Tecnologias Utilizadas
+### 🚀 Tecnologias Utilizadas
 - Java 21
 - Spring Boot
 - Jackson (para parsing de JSON)
 - Maven
 - Git / GitHub
 
-## 🛠 Funcionalidades
+### 🛠 Funcionalidades
 - Buscar informações de séries pela API OMDb.
 - Exibir título, número de temporadas e avaliação no OMDB.
 - Buscar todas as temporadas e episódios de uma série.
 - Filtrar episódios sem avaliação ("N/A") para exibir apenas dados relevantes.
 
+### 🌍 Tradução Automática de Sinopses
 
-## 💡 Estrutura do Projeto
+O sistema agora integra a API **MyMemory** para traduzir automaticamente as sinopses das séries retornadas pela API OMDb, exibindo-as em **português**.
+
+> Exemplo: ao buscar "Breaking Bad", a sinopse original em inglês é automaticamente traduzida antes de ser exibida no console.
+
+### 💡 Estrutura do Projeto
 - `ScreenmatchApplication` → classe principal que inicia a aplicação.
 - `ConsumoAPI` → realiza requisições HTTP.
 - `ConverteDados` → converte JSON em objetos Java.
 - `DadosSerie` → model que representa os dados da série.
 
-## 📝 Exemplo de Uso
+### 📝 Exemplo de Uso
 ```java
 var consumoAPI = new ConsumoAPI();
 var json = consumoAPI.obterDados("https://www.omdbapi.com/?t=gilmore+girls&apikey=YOUR_API_KEY");
